@@ -120,7 +120,8 @@ namespace ProxyGenerator
 			}
 			catch (Exception ex)
 			{
-				Console.WriteLine(ex.Message);
+				Console.WriteLine("ERROR: " + ex.Message);
+				Environment.Exit(1);
 			}
 		}
 	}
